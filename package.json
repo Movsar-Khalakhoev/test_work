@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "server/node_modules/.bin/nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
     "server:install": "npm i",
     "client:install": "npm i --prefix client",
     "client:build": "npm run build --prefix client"
@@ -20,6 +21,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "node-telegram-bot-api": "^0.51.0",
     "nodemon": "^2.0.7",
