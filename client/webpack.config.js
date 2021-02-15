@@ -8,6 +8,7 @@ const getStyleLoader = mode => {
 const getPlugins = mode => {
   const plugins = [
     new htmlWebpackPlugin({
+
       inject: 'body',
       template: 'src/index.html',
     }),
