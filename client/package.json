@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "proxy": "http://localhost:5000/",
+  "browserslist": [
+    "last 1 chrome version"
+  ],
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack build --mode=production"
+  },
+  "author": "Movsar-Khalakhoev",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel": "^6.23.0",
+    "telegram-bot-api": "^2.0.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.1.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "style-loader": "^2.0.0"
+  }
+}

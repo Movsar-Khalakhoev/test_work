@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "jsxSingleQuote": true,
+    "arrowParens": "avoid"
+  },
+  "scripts": {
+    "dev": "server/node_modules/.bin/nodemon index.js"
+  },
+  "author": "Movsar-Khalakhoev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.51.0",
+    "nodemon": "^2.0.7",
+    "telegram-bot-api": "^2.0.1"
+  },
+  "devDependencies": {
+    "request": "^2.88.2"
+  }
+}
