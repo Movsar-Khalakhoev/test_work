@@ -10,7 +10,10 @@
     "arrowParens": "avoid"
   },
   "scripts": {
-    "dev": "server/node_modules/.bin/nodemon index.js"
+    "dev": "server/node_modules/.bin/nodemon index.js",
+    "server:install": "npm i",
+    "client:install": "npm i --prefix client",
+    "client:build": "npm run build --prefix client"
   },
   "author": "Movsar-Khalakhoev",
   "license": "ISC",
