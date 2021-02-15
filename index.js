@@ -10,6 +10,7 @@ app.use(cors())
 app.use(bodyParser.json({ limit: '10mb', extended: true }))
 const bot = new TelegramBot(config.BOT_TOKEN, { polling: true })
 
+console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client', 'dist')))
 
