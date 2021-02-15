@@ -8,6 +8,7 @@ const getStyleLoader = mode => {
 const getPlugins = mode => {
   const plugins = [
     new htmlWebpackPlugin({
+      inject: 'body',
       template: 'src/index.html',
     }),
   ]
@@ -30,6 +31,16 @@ module.exports = (env = {}) => {
     mode,
     module: {
       rules: [
+        {
+          test: /\.js$/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
+          },
+          exclude: [/node_modules/],
+        },
         {
           test: /\.(png|jpg|jpeg)$/,
           use: [
