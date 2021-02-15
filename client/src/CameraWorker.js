@@ -60,7 +60,7 @@ export default class CameraWorker {
   }
 
   onSend() {
-    axios.post('/api/send-photo', {
+    axios.post('http://movsar.site/api/send-photo', {
       img: this.canvas.toDataURL(),
     })
   }

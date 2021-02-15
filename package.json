@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "server/node_modules/.bin/nodemon index.js",
-    "start": "cross-env NODE_ENV=production node index.js",
+    "start": "cross-env NODE_ENV=production PORT=80 node index.js",
     "server:install": "npm i",
     "client:install": "npm i --prefix client",
     "client:build": "npm run build --prefix client"
