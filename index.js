@@ -11,7 +11,7 @@ app.use(bodyParser.json({ limit: '10mb', extended: true }))
 const bot = new TelegramBot(config.BOT_TOKEN, { polling: true })
 
 if (process.env.NODE_ENV === 'production') {
-  app.use('/', express.static(path.join(__dirname, 'client', 'build')))
+  app.use('/', express.static(path.join(__dirname, 'client', 'dist')))
 
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
